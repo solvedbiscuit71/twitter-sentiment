@@ -1,6 +1,7 @@
 from transformers import AutoModelForSequenceClassification
 from transformers import AutoTokenizer, AutoConfig
 
+import os
 import numpy as np
 import pandas as pd
 
@@ -9,6 +10,9 @@ matplotlib.use('agg')
 import matplotlib.pyplot as plt
 
 from scipy.special import softmax
+
+os.makedirs("static/tweets")
+os.makedirs("static/plots")
 
 MODEL = f"cardiffnlp/twitter-roberta-base-sentiment-latest"
 

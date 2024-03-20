@@ -1,0 +1,168 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 16px;
+
+    --color-blue: #306998;
+    --color-sandal: #FFEBA2;
+    --color-red: #EE4C2C;
+    --color-black: #1E1E1E;
+    --gradient-blue2sandal: linear-gradient(to bottom, #5C90BA, #F7E8B2);
+
+    background-color: var(--color-sandal);
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    height: 188px;
+    background-color: var(--color-blue);
+    padding: 0 2em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1, header h2 {
+    margin: 0;
+
+    font-size: 3rem;
+    color: white;
+}
+
+header h2 {
+    font-weight: 500;
+    font-size: 2.25rem;
+}
+
+header .author {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    min-height: calc(95vh - 188px);
+}
+
+.hero, .test {
+    background-image: var(--gradient-blue2sandal);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 32px 36px;
+}
+
+.hero {
+    width: 553px;
+    height: 457px;
+    border-radius: 16px 0 0 16px;
+}
+
+.hero h2, .test h2 {
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+}
+
+.hero p, .test p {
+    margin: 0.75em 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--color-black);
+
+    text-align: justify;
+}
+
+.hero .logo {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .python-logo {
+    width: 80px;
+    height: auto;
+}
+.hero .flask-logo {
+    width: 101px;
+    height: auto;
+}
+.hero .pt-logo {
+    width: 65px;
+    height: auto;
+}
+.hero .hf-logo {
+    width: 101px;
+    height: auto;
+}
+
+.test {
+    width: 417px;
+    height: 457px;
+    border-radius: 0 16px 16px 0;
+}
+
+.test ol {
+    padding-left: 2em;
+}
+
+.test li {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-black);
+}
+
+form {
+    margin: 2em 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    padding: 0.5em 0.75em;
+    border: 5px solid var(--color-red);
+    background-color: transparent;
+    border-radius: 0.8em;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-red);
+}
+
+.button {
+    padding: 0.5em 0.75em;
+    border: 5px solid var(--color-red);
+    background-color: var(--color-red);
+    border-radius: 0.8em;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-black);
+}

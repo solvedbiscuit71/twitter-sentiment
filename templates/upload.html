@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Twitter Sentimental Analysis</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <link href="/static/css/upload.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <h1>Natural Language Processing</h1>
+                <h2>Twitter Sentimental Analysis</h2>
+            </div>
+
+            <div class="author">
+                <div> Praveen Perumal </div>
+                <div> @solvedbiscuit71 </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero">
+                <h2>Welcome!</h2>
+                <p>This is a RoBERTa-base model trained on ~124M tweets from January 2018 to December 2021, and fine-tuned for sentiment analysis with the Tweet-Eval benchmark.</p>
+
+                <div class="logo">
+                    <img src="/static/icons/python-logo.png" alt="Python" class="python-logo">
+                    <img src="/static/icons/flask-logo.webp" alt="Flask" class="flask-logo">
+                    <img src="/static/icons/pt-logo.png" alt="PyTorch" class="pt-logo">
+                    <img src="/static/icons/hf-logo.png" alt="Hugging Face" class="hf-logo">
+                </div>
+            </div>
+
+            <div class="test">
+                <h2>Test it out!</h2>
+
+                <p>Upload a CSV file with the below columns.</p>
+                <ol>
+                    <li>Tweet No: int</li>
+                    <li>Tweet: str</li>
+                </ol>
+
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <label for="file-upload">Choose a File</label>
+                    <input id="file-upload" type="file" name="file" accept=".csv" required hidden>
+                    <input type="submit" class="button" value="Upload">
+                </form>
+
+                <span class="disclaimer">**The file uploaded will be stored on the server.</span>
+            </div>
+        </main>
+    </body>
+</html>

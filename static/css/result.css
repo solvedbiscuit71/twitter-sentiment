@@ -1,0 +1,102 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 16px;
+
+    --color-blue: #306998;
+    --color-sandal: #FFEBA2;
+    --color-red: #EE4C2C;
+    --color-black: #1E1E1E;
+    --gradient-blue2sandal: linear-gradient(to bottom, #5C90BA, #F7E8B2);
+
+    background-color: var(--color-sandal);
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    height: 188px;
+    background-color: var(--color-blue);
+    padding: 0 2em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1, header h2 {
+    margin: 0;
+
+    font-size: 3rem;
+    color: white;
+}
+
+header h2 {
+    font-weight: 500;
+    font-size: 2.25rem;
+}
+
+header .author {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    min-height: calc(95vh - 188px);
+}
+
+.graph {
+    width: 986px;
+    height: auto;
+
+    margin: 3em 0;
+    padding: 3em;
+    background-image: var(--gradient-blue2sandal);
+    border-radius: 1em;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.graph h2 {
+    margin: 0 0 0.5em;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.graph img {
+    height: auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.pie img {
+    width: 500px;
+}
+
+.bar img {
+    width: 800px;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-black);
+}

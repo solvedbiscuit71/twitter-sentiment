@@ -11,8 +11,11 @@ import matplotlib.pyplot as plt
 
 from scipy.special import softmax
 
-os.makedirs("static/tweets")
-os.makedirs("static/plots")
+try:
+    os.makedirs("static/tweets")
+    os.makedirs("static/plots")
+except Exception:
+    pass
 
 MODEL = f"cardiffnlp/twitter-roberta-base-sentiment-latest"
 
